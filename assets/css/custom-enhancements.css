@@ -1,0 +1,640 @@
+/* ===================================
+   CUSTOM PROFESSIONAL ENHANCEMENTS
+   Modern, Creative, Yet Formal Design
+   =================================== */
+
+/* ============ Color Palette ============ */
+:root {
+  --primary-color: #2c3e50;
+  --accent-color: #3498db;
+  --accent-hover: #2980b9;
+  --secondary-color: #34495e;
+  --light-bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --text-primary: #2c3e50;
+  --text-secondary: #7f8c8d;
+  --border-color: #e0e0e0;
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.07);
+  --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+  --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-2: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+}
+
+/* ============ Global Enhancements ============ */
+body {
+  background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ============ Header & Navigation ============ */
+.site-header {
+  background: var(--card-bg);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color) !important;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.site-title:hover {
+  color: var(--accent-color) !important;
+  transform: translateY(-2px);
+}
+
+.site-title::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background: var(--gradient-2);
+  transition: width 0.3s ease;
+}
+
+.site-title:hover::after {
+  width: 100%;
+}
+
+.site-nav .page-link {
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-left: 25px;
+  padding: 8px 0;
+  position: relative;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.site-nav .page-link::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background: var(--accent-color);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.site-nav .page-link:hover {
+  color: var(--accent-color);
+}
+
+.site-nav .page-link:hover::before {
+  width: 100%;
+}
+
+/* ============ Profile Section ============ */
+.profile {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.profile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.profile figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.profile img {
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  box-shadow: var(--shadow-md);
+}
+
+.profile img:hover {
+  transform: scale(1.05);
+}
+
+/* ============ Bio Section ============ */
+.clearfix p {
+  line-height: 1.8;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+.clearfix p strong {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.clearfix p a {
+  color: var(--accent-color);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.clearfix p a:hover {
+  border-bottom-color: var(--accent-color);
+  color: var(--accent-hover);
+}
+
+/* ============ Research Highlights Cards ============ */
+.research-summary {
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  border-left: 4px solid var(--accent-color);
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.research-summary:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateX(5px);
+}
+
+.research-summary p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.research-summary strong {
+  color: var(--primary-color);
+}
+
+/* ============ News Section ============ */
+.news {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 35px;
+  box-shadow: var(--shadow-md);
+  margin-top: 40px;
+  border: 1px solid var(--border-color);
+}
+
+.news h3 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid var(--accent-color);
+  position: relative;
+}
+
+.news h3::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background: var(--gradient-2);
+}
+
+.news-container {
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+.news-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.news-container::-webkit-scrollbar-track {
+  background: var(--light-bg);
+  border-radius: 10px;
+}
+
+.news-container::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.news-container::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-hover);
+}
+
+.news ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.news li {
+  padding: 18px 20px;
+  margin-bottom: 15px;
+  background: var(--light-bg);
+  border-radius: 10px;
+  border-left: 4px solid var(--accent-color);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.news li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: var(--gradient-2);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+.news li:hover {
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+  transform: translateX(10px);
+  border-left-color: transparent;
+}
+
+.news li:hover::before {
+  transform: scaleY(1);
+}
+
+.news-date {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: inline-block;
+  min-width: 100px;
+}
+
+.news-content {
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+/* ============ Contact & Social Links ============ */
+.address {
+  background: var(--light-bg);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--accent-color);
+}
+
+.address p {
+  margin-bottom: 12px;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.address i {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+
+.address a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.address a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.social .contact-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social .contact-icons a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-bg);
+  border-radius: 50%;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.social .contact-icons a:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: var(--shadow-md);
+}
+
+/* ============ Publications Section ============ */
+.publication-wrapper {
+  margin: 30px 0;
+}
+
+.publication-wrapper ol {
+  counter-reset: publication-counter;
+  list-style: none;
+  margin-left: 0;
+}
+
+.publication-wrapper li {
+  counter-increment: publication-counter;
+  position: relative;
+  padding: 25px;
+  margin-bottom: 20px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.publication-wrapper li::before {
+  content: counter(publication-counter);
+  position: absolute;
+  left: -15px;
+  top: 25px;
+  background: var(--gradient-2);
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: var(--shadow-md);
+}
+
+.publication-wrapper li:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateX(10px);
+  border-color: var(--accent-color);
+}
+
+.publication-wrapper .author {
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.publication-wrapper .author b {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.publication-wrapper .title {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 10px 0;
+}
+
+.publication-wrapper .journal,
+.publication-wrapper .booktitle {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.publication-wrapper .note {
+  display: inline-block;
+  background: #fef3cd;
+  color: #856404;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.publication-wrapper hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border-color), transparent);
+  margin: 20px 0 0 0;
+}
+
+/* ============ Awards Section ============ */
+.post-content h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin: 40px 0 25px 0;
+  padding-bottom: 15px;
+  border-bottom: 3px solid var(--accent-color);
+  position: relative;
+}
+
+.post-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: var(--gradient-2);
+}
+
+.post-content ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.post-content > ul > li {
+  background: var(--card-bg);
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border-left: 5px solid var(--accent-color);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.post-content > ul > li:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateX(8px);
+}
+
+.post-content > ul > li strong {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.post-content > ul > li em {
+  color: var(--text-secondary);
+}
+
+/* ============ Teaching Section ============ */
+.post-content h3 {
+  color: var(--accent-color);
+  font-size: 1.4rem;
+  margin: 30px 0 20px 0;
+  padding-left: 15px;
+  border-left: 4px solid var(--accent-color);
+}
+
+/* ============ Service Section ============ */
+.post-content h3 {
+  transition: all 0.3s ease;
+}
+
+.post-content h3:hover {
+  padding-left: 25px;
+  color: var(--accent-hover);
+}
+
+/* ============ Responsive Design ============ */
+@media screen and (max-width: 768px) {
+  .site-nav .page-link {
+    margin-left: 15px;
+  }
+
+  .profile {
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  .news-container {
+    max-height: 400px;
+  }
+
+  .publication-wrapper li::before {
+    position: relative;
+    left: 0;
+    margin-bottom: 10px;
+  }
+
+  .post-content h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ============ Animations ============ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile,
+.news,
+.publication-wrapper li,
+.post-content > ul > li {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* ============ Print Styles ============ */
+@media print {
+  .site-header,
+  .social,
+  .site-footer {
+    display: none;
+  }
+
+  body {
+    background: white;
+  }
+
+  .profile,
+  .news,
+  .publication-wrapper li {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
+
+/* ============ Accessibility ============ */
+.news-container:focus,
+a:focus,
+button:focus {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* ============ Loading States ============ */
+.page-content {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* ============ Publication Links ============ */
+.publication-links {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pub-link {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--light-bg);
+  color: var(--accent-color);
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.pub-link:hover {
+  background: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.pub-link[style*="display:none"] {
+  display: none !important;
+}
+
+/* ============ Utility Classes ============ */
+.text-accent {
+  color: var(--accent-color) !important;
+}
+
+.bg-gradient {
+  background: var(--gradient-2) !important;
+  color: white !important;
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
