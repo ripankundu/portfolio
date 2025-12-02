@@ -84,19 +84,19 @@
     <nav class="site-nav">
       
         
-        <a class="page-link" href="/">Home</a>
-      
-        
-        <a class="page-link" href="/publications/">Publications</a>
-      
-        
-        <a class="page-link" href="/awards/">Awards</a>
-      
-        
-        <a class="page-link" href="/teaching/">Teaching</a>
-      
-        
-        <a class="page-link" href="/service/">Service</a>
+        <a class="page-link" href="/portfolio/">Home</a>
+
+
+        <a class="page-link" href="/portfolio/publications/">Publications</a>
+
+
+        <a class="page-link" href="/portfolio/awards/">Awards</a>
+
+
+        <a class="page-link" href="/portfolio/teaching/">Teaching</a>
+
+
+        <a class="page-link" href="/portfolio/service/">Service</a>
       
     </nav>
 
